@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>search</title>
+</head>
+
+<body>
+    <div>
+        <a href="../index.html">Главная страница</a>
+        <a href="authorization.html">Авторизация</a>
+        <a href="registration.html">Регистрация</a>
+        <a href="search.html">Поиск</a>
+    </div>
+    <form action="https://tests.fomenko.top/echo/index.php" method="get">
+        <fieldset>
+            <legend>Характеристики</legend>
+            <div>
+                <label for="body">Тип кузова</label>
+                <select name="body" id="body">
+                    <option value="close">Закрытый</option>
+                    <option value="open">Открытый</option>
+                    <option value="Cargo-passenger">Грузо-пасажирский</option>
+                </select>
+            </div>
+            <div>
+                <label for="brand">Марка авто</label>
+                <select name="brand" id="brand">
+                    <option value="bmw">BMW</option>
+                    <option value="ford">Ford</option>
+                    <option value="honda">Honda</option>
+                    <option value="kia">Kia</option>
+                </select>
+            </div>
+            <div>
+                <label for="country">Страна производитель</label>
+                <select name="country" id="country">
+                    <option value="germany">Германия</option>
+                    <option value="usa">США</option>
+                    <option value="japan">Япония</option>
+                    <option value="the republic of korea">Республика Корея</option>
+                </select>
+            </div>
+            <div>
+                <label for="price1">Цена</label>
+                <select name="price1" id="price1">
+                    <option value="from">от</option>
+                    <option value="0">0</option>
+                    <option value="100">100</option>
+                    <option value="1000">1000</option>
+                    <option value="5000">5000</option>
+                </select>
+                <label for="price2">Цена</label>
+                <select name="price2" id="price2">
+                    <option value="to">до</option>
+                    <option value="1000">1000</option>
+                    <option value="5000">0</option>
+                    <option value="10000">10000</option>
+                    <option value="50000">50000</option>
+                </select>
+            </div>
+            <fieldset>
+                <legend>Состояние автомобиля</legend>
+                <div>
+                    <label for="all">Все</label>
+                    <input id="all" type="checkbox" name="all" value="yes">
+                </div>
+                <div>
+                    <label for="new">Новая</label>
+                    <input id="new" type="checkbox" name="new" value="yes">
+                </div>
+                <div>
+                    <label for="broken">Битая</label>
+                    <input id="broken" type="checkbox" name="broken" value="yes">
+                </div>
+                <div>
+                    <label for="credit">В кредите</label>
+                    <input id="credit" type="checkbox" name="credit" value="yes">
+                </div>
+                <div>
+                    <label for="notcleared">Нерастаможенная</label>
+                    <input id="notcleared" type="checkbox" name="notcleared" value="yes">
+                </div>
+            </fieldset>
+            <div>
+                <label for="fuel">Тип топлива</label>
+                <select name="fuel" id="fuel">
+                    <option value="gas">газ</option>
+                    <option value="petrol">бензин</option>
+                    <option value="mixed fuel">смешанное топливо</option>
+                </select>
+            </div>
+            <div>
+                <label for="Transmission">Тип коробки передач</label>
+                <select name="Transmission" id="Transmission">
+                    <option value="mechanical">механическая</option>
+                    <option value="automatic">автоматическая</option>
+                </select>
+            </div>
+            <div>
+                <label for="color">Цвет</label>
+                <select name="color" id="color">
+                    <option value="color1">Выбрать цвет</option>
+                    <option value="black">Чёрный</option>
+                    <option value="white">Белый</option>
+                    <option value="red">Красный</option>
+                    <option value="blue">Синий</option>
+                    <option value="green">Зелёный</option>
+                </select>
+            </div>
+            <fieldset>
+                <legend>Комфорт</legend>
+                <div>
+                    <label for="luke">Люк</label>
+                    <input id="luke" type="checkbox" name="luke" value="yes">
+                </div>
+                <div>
+                    <label for="conditioner">Кондиционер</label>
+                    <input id="conditioner" type="checkbox" name="conditioner" value="yes">
+                </div>
+                <div>
+                    <label for="sensors">Дополнительные датчики</label>
+                    <input id="sensors" type="checkbox" name="sensors" value="yes">
+                </div>
+                <div>
+                    <label for="tinted">Тонированные окна</label>
+                    <input id="tinted" type="checkbox" name="tinted" value="yes">
+                </div>
+                <div>
+                    <label for="airbag">Подушка безопасности</label>
+                    <input id="airbag" type="checkbox" name="airbag" value="yes">
+                </div>
+            </fieldset>
+            <div>
+                <input type="submit" value="Поиск">
+                <input type="reset" value="Сбросить">
+            </div>
+        </fieldset>
+    </form>
+</body>
+
+</html>
